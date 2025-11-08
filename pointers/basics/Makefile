@@ -10,7 +10,7 @@ pointers: pointers.cpp
 	$(GCC) $(CFLAGS) -o pointers pointers.cpp
 
 whoami: whoami.cu
-	$(nvcc) $(CFLAGS) -o whoami whoami.cu
+	$(nvcc) -o whoami whoami.cu
 
 
 clean:
