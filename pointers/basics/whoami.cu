@@ -21,7 +21,7 @@ int main() {
     dim3 grid(2, 2, 1);   
     dim3 block(2, 2, 1);  
 
-    whoami<<<grid, block>>>();
+    whoami<<<grid, block>>>(); // this isn the host function call
     cudaDeviceSynchronize();
     
     return 0;
